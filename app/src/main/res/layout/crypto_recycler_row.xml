@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llCryptoRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|center"
+        android:background="@drawable/design_row"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvSymbolRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/symbol"
+            android:padding="@dimen/crypto_row_padding"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:gravity="center"
+            android:fontFamily="@string/font2"
+            />
+
+        <TextView
+            android:id="@+id/tvStockExchangeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stockExchange"
+            android:gravity="center"
+            android:fontFamily="@string/font2"
+            android:padding="@dimen/crypto_row_padding"
+            android:textSize="@dimen/crypto_row_text_size"
+            />
+
+        <TextView
+            android:id="@+id/tvLastPriceRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastPrice"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:fontFamily="@string/font2"
+            android:gravity="center"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+        <TextView
+            android:id="@+id/tvPriceChangePercentRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priceChangePercent"
+            android:fontFamily="@string/font2"
+            android:gravity="center"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+        <TextView
+            android:id="@+id/tvTotalNumberOfTradesRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/totalNumberOfTrades"
+            android:fontFamily="@string/font2"
+            android:gravity="center"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+        <TextView
+            android:id="@+id/tvAskRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@string/font2"
+            android:text="@string/ask"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+        <TextView
+            android:id="@+id/tvBidRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@string/font2"
+            android:text="@string/bid"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+        <TextView
+            android:id="@+id/tvEventTimeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@string/font2"
+            android:text="@string/eventTime"
+            android:textSize="@dimen/crypto_row_text_size"
+            android:padding="@dimen/crypto_row_padding"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

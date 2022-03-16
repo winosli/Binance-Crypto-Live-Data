@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Crypto Data</string>
+    <string name="symbol">Symbol</string>
+    <string name="stockExchange">Stock</string>
+    <string name="lastPrice">Last price</string>
+    <string name="priceChangePercent">Price change percent</string>
+    <string name="totalNumberOfTrades">Total trades</string>
+    <string name="ask">Ask</string>
+    <string name="bid">Bid</string>
+    <string name="eventTime">Event time</string>
+    <string name="high_price_for_alert">High price for alert</string>
+    <string name="high_price_hint"><font size="10">High price</font></string>
+    <string name="low_price_for_alert">Low price for alert</string>
+    <string name="low_price_hint"><font size="10">Low price</font></string>
+    <string name="high_percent_for_alert">High percent for alert</string>
+    <string name="high_percent_hint"><font size="10">High percent</font></string>
+    <string name="low_percent_for_alert">Low percent for alert</string>
+    <string name="low_percent_hint"><font size="10">Low percent</font></string>
+    <string name="save">SAVE</string>
+    <string name="buy">BUY</string>
+
+</resources>

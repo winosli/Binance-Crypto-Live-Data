@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/background_"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Command Alert"
+        android:fontFamily="@string/font2"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvCommandMessageCryptoDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@string/font1"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action price"
+                android:fontFamily="@string/font1"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <com.comp.cryptotrading.pickers.DecimalPicker
+                android:id="@+id/np_action_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textSize="10dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BTC"
+                android:fontFamily="@string/font2"
+                android:textSize="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvCommandCryptoFullDetailsDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More Details"
+                android:fontFamily="@string/font1"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvCommandCryptoPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35$"
+                android:fontFamily="@string/font2"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:fontFamily="@string/font1"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/number_picker_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:snp_scrollEnabled="true"
+                android:layout_weight="1"
+                app:snp_value_text_size="25dp"
+                app:snp_updateInterval="1"
+                app:snp_maxValue="1000"
+                app:snp_buttonPaddingBottom="8dp"
+                app:snp_buttonPaddingLeft="8dp"
+                app:snp_buttonPaddingRight="8dp"
+                app:snp_buttonPaddingTop="8dp"
+                app:snp_minValue="1"
+                app:snp_stepSize="1"
+                app:snp_value="10"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuyCommandDialog"
+            style="@style/Widget.MaterialComponents.Button.TextButton"            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:layout_weight="1"
+            android:text="BUY"
+            android:textColor="#196f3d"
+            android:visibility="visible"
+            app:strokeColor="#F00"
+            android:textSize="17dp"
+            app:strokeWidth="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSellCommandDialog"
+            style="@style/Widget.MaterialComponents.Button.TextButton"            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#000"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:text="SELL"
+            android:textColor="#9e1e02"
+            android:visibility="visible"
+            app:strokeColor="#F00"
+            app:strokeWidth="20dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
